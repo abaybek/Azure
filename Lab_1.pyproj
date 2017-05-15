@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41eda6fe-9439-4ed9-b070-9b451f305436}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="FlaskWebProject1\static\content\bootstrap.css" />
+    <Content Include="FlaskWebProject1\static\content\bootstrap.min.css" />
+    <Content Include="FlaskWebProject1\static\content\site.css" />
+    <Content Include="FlaskWebProject1\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FlaskWebProject1\static\scripts\bootstrap.js" />
+    <Content Include="FlaskWebProject1\static\scripts\bootstrap.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="FlaskWebProject1\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebProject1\static\scripts\respond.js" />
+    <Content Include="FlaskWebProject1\static\scripts\respond.min.js" />
+    <Content Include="FlaskWebProject1\static\scripts\_references.js" />
+    <Content Include="FlaskWebProject1\templates\about.html" />
+    <Content Include="FlaskWebProject1\templates\contact.html" />
+    <Content Include="FlaskWebProject1\templates\index.html" />
+    <Content Include="FlaskWebProject1\templates\layout.html" />
+    <Content Include="hostingstart.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\wfastcgi.py" />
+    <Compile Include="FlaskWebProject1\views.py" />
+    <Compile Include="FlaskWebProject1\__init__.py" />
+    <Compile Include="ptvs_virtualenv_proxy.py" />
+    <Compile Include="runserver.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin" />
+    <Folder Include="FlaskWebProject1" />
+    <Folder Include="FlaskWebProject1\static\" />
+    <Folder Include="FlaskWebProject1\static\content" />
+    <Folder Include="FlaskWebProject1\static\fonts" />
+    <Folder Include="FlaskWebProject1\static\scripts" />
+    <Folder Include="FlaskWebProject1\templates" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>{0350ee3c-fb8e-48aa-84ca-474b6cefe958}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env1 (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+    <Interpreter Include="env\">
+      <Id>{5dd97e0c-f918-4be5-b8f5-fdba7bf80d37}</Id>
+      <Description>env</Description>
+      <BaseInterpreter>{00000000-0000-0000-0000-000000000000}</BaseInterpreter>
+      <InterpreterPath>
+      </InterpreterPath>
+      <WindowsInterpreterPath>
+      </WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <Version>0.0</Version>
+      <Architecture>
+      </Architecture>
+      <PathEnvironmentVariable>
+      </PathEnvironmentVariable>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
